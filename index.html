@@ -10,15 +10,15 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     </head>
 
-<body>    
+<body class="scrollbar scrollbar-thumb-blue-700 scrollbar-track-blue-300 overflow-y-scroll hover:scrollbar-thumb-green-700">    
     
    <!--Sticky Navigation-->
 <div class="container mx-auto bg-gradient-to-t from-gray-100 via-gray-50 to-white-200 opacity-100">
-    <div class="flex bg-white-200 sticky top-0">
+    <div class="flex flex-warp  sticky  top-0">
       <div class="w-1/2 text-left p-4">
-        <a href="" class=" flex flex-row items-center"><img src="Assets/Logo.png" alt="" class="h-10"><h2 class="invisible xl:visible font-bold">Thrive Christian Academy</h2></a>
+        <a href="" class="w-11 bg-yellow-200 rounded-full flex flex-row items-center"><img src="Assets/Logo.png" alt="" class="drop-shadow-lg h-10"><h2 class="invisible xl:visible font-bold">Thrive Christian Academy</h2></a>
       </div>
-      <div class="w-1/2 text-right p-4">
+      <div class="w-auto text-right flex flex-warp p-4">
         <!--a class="inline-block px-4 py-2 text-white hover:text-gray-700" href="#">Home</a-->
         <a class="inline-block px-4 py-2 text-black hover:font-semibold hover:text-blue-400" href="#">About</a>
         <a class="inline-block px-4 py-2 text-black hover:font-semibold hover:text-blue-400" href="#">Admissions</a>
@@ -28,11 +28,17 @@
 
  <!-- Hero Section -->
 <!--Hero Image-->
-<div class="bg-[url('Assets/Heroimage1.png')] shadow-lg bg-center bg-fixed bg-cover bg-no-repeat flex flex-col items-center justify-center  w-full h-72 md:h-80 xl:h-96">
-    <h2 class="text-3xl drop-shadow-2xl flex flex-col justify-center items-center font-bold text-white "><img src="Assets/Logo.png" class="w-1/4">Join the Thrive Christian Academy family</h2>
-    <button type="button" data-bs-toggle="modal" data-bs-target="#enrollModal" class="bg-white shadow-lg hover:font-bold py-2 px-4 rounded-full hover:bg-black-100 active:bg-yellow-200 active:outline-300 focus:ring focus:ring-black-300 mt-4 transition-all duration-30 ease-cubic">
-        <a class="text-green-800 hover:text-green-400 active:text-white transition-all ease-cubic " href="Assets\THRIVE ACADEMY APPLICATION FORM 2023.pdf" download="TCA ApplicationForm">Enroll Your Child Now!</a>
+<div class="bg-[url('Assets/Heroimage1.png')] bg-blend-normal h-72 drop-shadow-2xl bg-center bg-fixed bg-cover bg-no-repeat flex flex-col items-center justify-center  w-full  md:h-80 xl:h-96">
+    
+    <div class="bg-gradient-to-br from-yellow xl:bg-gradient-to-br from-white  flex flex-col items-center justify-center w-full h-72 md:h-80 xl:h-96">
+        <img src="Assets/Logo.png" class="w-20">
+    <h2 class="text-3xl drop-shadow-2xl flex flex-col text-center justify-center items-center text-green-900 font-serif font-extrabold m-0">Join the Thrive Christian Academy family</h2>
+    
+    <button type="button" data-bs-toggle="modal" data-bs-target="#enrollModal" class="bg-white shadow-lg hover:font-bold py-2 px-4 rounded-full hover:bg-black-100 active:bg-yellow-200 active:outline-300 focus:ring focus:ring-black-300 m-10  transition-all duration-30 ease-cubic">
+        <a class="text-green-800 hover:text-green-400 active:text-white transition-all ease-cubic " >Enroll Your Child Now!</a>
     </button>
+</div>
+
 </div>
 <!-- End Hero Section -->
 
@@ -103,11 +109,11 @@ service to God
 </div>
 <!-- End of services Section -->
 
-<div class="w-full flex flex-col items-center justify-center  bg-white-500 backdrop-blur">
+<div class="w-full flex flex-col items-center justify-center  bg-white-500 backdrop-blur-2xl">
     <div class="max-w-xl text-center py-12">
         <h1 class="text-3xl font-semibold">Take a tour of Thrive</h1>
         <p class="text-xl font-light hover:text-2xl  transition-all duration-1000">
-            Our school is situated on a two-acre property located in a urban area. We are a preschool school that offers a high-quality education with a biblical foundation. Our school is a family-friendly environment with a commitment to educating and disciplining the whole child.
+            Our school is situated on a property located in an urban area. We are a preschool school that offers a high-quality education with a biblical foundation. Our school is a family-friendly environment with a commitment to educating and disciplining the whole child.
         </p>
     </div>
     <div class="relative h-auto w-full md:w-2/4  xl:w-3/4 mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
@@ -193,73 +199,82 @@ service to God
 </div>
 
 
-<!--SCHOOL TERMS AND OPERATING HOURS with icons-->
-<div class="w-full text-center">
-    <h2 class="font-bold text-3xl text-blue-400">School Terms and Operating Hours</h2>
-    <p class="text-gray-600 text-xl font-semibold">Thrive Academy will follow the school calendar set by the Namibian Ministry of Education.</p>
-    <div class="flex flex-row justify-center mt-4 mb-4 text-xl">
-        <div class="flex flex-row justify-center w-full font-semibold text-gray-600">
-            <div class="flex flex-row justify-center items-center">
-            <i class="fas fa-clock fa-2x mr-2"></i>
-            <span>School opens: 07:00 – School closes: 17:30</span>
-            </div>
-            <div class="flex flex-row justify-center items-center">
-            <i class="fas fa-clock fa-2x mr-2"></i>
-            <span>School hours: 08:00 - 13:00 (half school day)<br>
-            08:00 - 17:00 (full school day)</span>
-            </div>
-            <div class="flex flex-row justify-center items-center">
-            <i class="fas fa-exclamation-triangle fa-2x mr-2"></i>
-            <span>(Pick up time cannot be later than 13:30 for half day, and 17:30 for full day; every half an hour late<br> will be charged N$ 50.00)</span>
-            </div>
-            <div class="flex flex-row justify-center items-center">
-            <i class="fas fa-user-clock fa-2x mr-2"></i>
-            <span>Office hours: 08:00 - 16:00</span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- End School Terms Section -->
 
 
 
 <!--SCHOOL TERMS AND OPERATING HOURS with icons font awesome-->
-<div class="container mx-auto flex flex-wrap flex-row-reverse justify-center items-center text-center">
+<h3 class="backdrop-blur-lg text-2xl font-bold  text-green-500 text-center my-10">Our Terms and hours</h3>
+<div class="backdrop-blur-2xl container mx-auto flex flex-wrap flex-row-reverse justify-center items-center text-center my-10">
+    
     <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col justify-center items-center text-center p-4">
-        <i class="fa fa-clock-o fa-3x text-green-500 mb-4"></i>
-        <h3 class="text-2xl font-bold">School Hours</h3>
-        <p>08:00 - 13:00 (half school day)</p>
-        <p>08:00 - 17:00 (full school day)</p>
+        <img src="Assets/clock.png" class="w-20 h-auto mb-4">
+        <h3 class="text-2xl font-bold  text-green-900">School Hours</h3>
+        <p class=" text-green-700">08:00 - 13:00 (half school day)</p>
+        <p class=" text-green-700">08:00 - 17:00 (full school day)</p>
     </div>
     <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col justify-center items-center text-center p-4">
-        <i class="fa fa-calendar fa-3x text-green-500 mb-4"></i>
-        <h3 class="text-2xl font-bold">School Terms</h3>
-        <p>Follows the school calendar set by the Namibian Ministry of Education.</p>
+        <img src="Assets/paper.png" class="w-20 h-auto text-green-500 mb-4">
+        <h3 class="text-2xl font-bold  text-green-900">School Terms</h3>
+        <p class=" text-green-700">Follows the school calendar set by the Namibian Ministry of Education.</p>
     </div>
     <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col justify-center items-center text-center p-4">
-        <i class="fa fa-building fa-3x text-green-500 mb-4"></i>
-        <h3 class="text-2xl font-bold">Office Hours</h3>
-        <p>08:00 - 16:00</p>
+        <img src="Assets/school.png" class="w-20 h-auto text-green-500 mb-4">
+        <h3 class="text-2xl font-bold  text-green-900">Office Hours</h3>
+        <p class=" text-green-700">08:00 - 16:00</p>
     </div>
     <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col justify-center items-center text-center p-4">
-        <i class="fa fa-car fa-3x text-green-500 mb-4"></i>
-        <h3 class="text-2xl font-bold">Pick up</h3>
-        <p>13:30 for half day</p>
-        <p>17:30 for full day</p>
+        <img src="Assets/Pick-up.png" class=" w-20 h-auto text-green-500 mb-4">
+        <h3 class="text-2xl font-bold  text-green-900">Pick up</h3>
+        <p class=" text-green-700">13:30 for half day</p>
+        <p class=" text-green-700">17:30 for full day</p>
     </div>
 </div>
 
 <!--Enroll banner-->
 <div class="w-full flex flex-row justify-center items-center">
-    <div class="bg-gradient-to-t from-gray-100 via-gray-50 to-white-200 opacity-100 h-auto w-full md:w-2/4  xl:w-3/4 mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-        <h2 class="text-3xl font-bold text-green-500">Ready to enroll your child?</h2>
-        <p class="text-gray-600 font-light">We are now accepting applications for the 2023 school year.</p>
-        <button type="button" data-bs-toggle="modal" data-bs-target="#enrollModal" class="bg-white shadow-lg hover:font-bold py-2 px-4 rounded-full hover:bg-black-100 active:bg-yellow-200 active:outline-300 focus:ring focus:ring-black-300 mt-4 transition-all duration-30 ease-cubic">
+    <div class=" bg-[url('Assets/Heroimage2.png')] bg-center bg-fixed bg-cover bg-no-repeat flex flex-row items-center opacity-100 h-auto w-full md:w-2/4  xl:w-3/4 mx-auto rounded-lg shadow-lg overflow-hidden">
+        <div>
+        <h2 class="text-3xl font-bold text-white-500">Ready to enroll your child?</h2>
+        <p class="text-gray-600 font-light">We are now accepting applications for the 2023 school year.</p></div>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#enrollModal" class="  bg-white shadow-lg hover:font-bold px-4 py-2 xl:ml-40 rounded-full hover:bg-black-100 active:bg-yellow-200 active:outline-300 focus:ring focus:ring-black-300 mt-4 transition-all duration-30 ease-cubic">
             <a class="text-green-800 hover:text-green-400 active:text-white transition-all ease-cubic ">Enroll Now!</a>
         </button>
     </div>
 </div>
+
+<!-- Staff to Contact for more details-->
+<div class="flex flex-col backdrop-blur bg-gray-100 flex-warp justify-center mx-auto">
+    <h2 class="text-4xl m-10  font-bold text-gray-900 text-center" >Contact us for more information</h2>
+    <div class="flex flex-wrap xl:flex-row backdrop-blur  justify-center items-center mx-auto">
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-3/5  mb-4 p-4">
+        <div class="max-w-sm rounded flex flex-row overflow-hidden shadow-lg">
+            <img class="w-100%" src="Assets/Mari.png" alt="DayCare">
+            <div class=" w-1/2 px-6 py-4">
+                <div class="font-bold text-xl mb-2">Mari Maghiar</div>
+                <p class="font-bold text-base">Head of Department</p>
+                <p class="text-gray-700 text-base">
+                    Email: marisandumaghiar@gmail.com
+                    Phone: +264812825320
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-3/5 mb-4 p-4">
+        <div class="max-w-sm rounded flex flex-row overflow-hidden shadow-lg">
+            <img class="w-full" src="Assets/Maxwell.png" alt="Kindergarten">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Maxwell Nghidinwa</div>
+                <p class="font-bold text-base">Partner</p>
+                <p class="text-gray-700 text-base">
+                    Email: maxnghidinwa@gmail.com
+                    Phone: +264816797015
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- End of Staff Section-->
 
 <!-- Booking Section -->
 <!--extra curricular Activity cards with a booking button-->
@@ -279,7 +294,7 @@ service to God
                 We provide Piano Lessons services for children in Grade Zero.
             </p>
             <div class="mt-4">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#extraModal" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</button>
             </div>
         </div>
     </div>
@@ -308,12 +323,12 @@ service to God
 <div class="flex w-full justify-center items-center">
     <div class="relative h-64 w-2/3 mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
         <div class="flex flex-row items-center bg-gray-400 h-16 rounded-t-lg">
-            <h2 class="text-xl font-bold text-gray-900">News</h2>
+            <h2 class="text-xl text-center font-bold text-gray-900">News</h2>
         </div>
         <div class="h-48 w-full" id="carousel">
             <div class="h-full w-full" v-for="news in newsList">
-                <p v-text="news.title" class="text-sm font-medium text-gray-900 p-2"></p>
-                <p v-text="news.description" class="text-xs font-medium text-gray-900 p-2"></p>
+                <p v-text="news.title" class="text-sm font-medium text-gray-900 p-2">turn it of</p>
+                <p v-text="news.description" class="text-xs font-medium text-gray-900 p-2">These are empty</p>
             </div>
         </div>
     </div>
@@ -333,13 +348,26 @@ service to God
 <!--Our Location-->
 <div class="flex flex-col items-center justify-center bg-white mb-10">
     <h2 class="text-4xl m-10 font-bold text-gray-900">Our Location</h2>
-    <div class="relative h-64 mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-        <div class="h-48 w-96" id="ourlocation">
+    <div class="flex flex-col w-96 h-64 mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="h-auto w-100%" id="ourlocation">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.328629391243!2d30.969799984629584!3d-29.847847384751098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a89d67f7f955%3A0x2b2c9b9aebf5e0c5!2sThrive%20Christian%20Academy!5e0!3m2!1sen!2sza!4v1594577398920!5m2!1sen!2sza" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>
 </div>
 <!-- End Our Location -->
+
+<!--Enroll banner-->
+<div class="w-full flex flex-row justify-center items-center">
+    <div class=" bg-[url('Assets/Heroimage2.png')] bg-center bg-fixed bg-cover bg-no-repeat flex flex-row items-center opacity-100 max-h-16 w-full md:w-2/4  xl:w-3/4 mx-auto rounded-lg shadow-lg overflow-hidden">
+        <div>
+        <h2 class="text-3xl font-bold text-white-500">Ready to enroll your child?</h2>
+        <p class="text-gray-600 font-light">We are now accepting applications for the 2023 school year.</p></div>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#enrollModal" class="  bg-white shadow-lg hover:font-bold px-4 py-2 xl:ml-40 rounded-full hover:bg-black-100 active:bg-yellow-200 active:outline-300 focus:ring focus:ring-black-300 mt-4 transition-all duration-30 ease-cubic">
+            <a class="text-green-800 hover:text-green-400 active:text-white transition-all ease-cubic ">Enroll Now!</a>
+        </button>
+    </div>
+</div>
+
 
 <!--Gallery slider-->
 
@@ -389,6 +417,42 @@ service to God
 <div class="modal" id="enrollModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
+        <div class="modal-header flex flex-col justify-center items-center bg-gradient-to-b from-green-400">
+            <img src="Assets/Logo.png" class="h-40">
+          <h5 class="modal-title text-yellow-500" id="exampleModalLabel">Thank You For Your Interest in Thrive Christian Academy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <div class="flex flex-col justify-center items-center">
+          <div class="flex flex-col justify-center items-center">
+            <img src="Assets/school-bag.png" class="w-1/4 h-auto">
+            <p>Your application form will be downloaded shortly.<br>
+        If the download didn't start please<br><a>Click here</a></p></div>
+        <div>
+        Print it out, fill it in, send it to<br>
+        P.O. BOX 40502, Auspannplats<br></div>
+          <div>
+          Or you could scan the filled in form<br> 
+          and E-mail it to thriveacademynamibia@gmail.com<br></div>
+        </div>
+    </div>
+        <div class="modal-footer">
+            <div>
+                Having trouble just contact this<br>
+                Mobile: 0816765504
+                </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Extra-curricular modal-->
+  <div class="modal" id="extraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
         <div class="modal-header flex flex-col justify-center items-center bg-gradient-to-t from-amber-900 via-green-400 to-yellow-50">
             <img src="Assets/Logo.png" class="h-40">
           <h5 class="modal-title" id="exampleModalLabel">Thank You For Your Interest in Thrive Christian Academy</h5>
@@ -398,7 +462,7 @@ service to God
         </div>
         <div class="modal-body">
         <div class="flex flex-col justify-center items-center">
-          <div>Your application form will be downloaded shortly.<br>
+          <div>Your application form for music lessons will be downloaded shortly.<br>
         If the download didn't start please<br><a>Click here</a></div>
         <div>
         Print it out, fill it in, send it to
@@ -406,6 +470,10 @@ service to God
           <div>
           Or you could scan the filled in form<br> 
           and E-mail it to thriveacademynamibia@gmail.com<br></div>
+          <div>
+              For Swimming lessons please<br>
+              Call 0816765504
+          </div>
         </div>
     </div>
         <div class="modal-footer">
